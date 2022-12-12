@@ -4,7 +4,7 @@ body.active-modal {
 
 .btn-modal {
     padding: 10px 20px;
-    display: block;
+    display: flex;
     margin: 100px auto 0;
     font-size: 18px;
 }
@@ -24,13 +24,15 @@ body.active-modal {
 }
 .modal-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
+    text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
     background: #f1f1f1;
     padding: 14px 28px;
     border-radius: 3px;
+    /* display: inline-flex; */
     max-width: 600px;
     min-width: 300px;
 }
@@ -40,4 +42,120 @@ body.active-modal {
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+}
+
+.container {
+    display: flex;
+    grid-template-columns: auto auto;
+  }
+
+  p {
+    /* display: none; */
+    flex: 10;
+  }
+  /* @media screen and (max-width: 600px) {
+    
+    } */
+
+/* .left {
+    float: left;
+}
+
+.right {
+    float: right;
+} */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 6px solid yellow;
+}  
+
+.flex-child:first-child {
+    margin-right: 200px;
+} 
+
+.btn-group{
+    display: inline-;
+    flex-wrap : nowrap;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.heading {
+    text-align: center;
+}
+
+.btn-group .left{
+    float:left;
+    /* font-size: 1.5em; */
+    /* text-align: left; */
+    vertical-align: text-top;
+    font-weight: bolder;
+    align-items: center;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    border: #f1f1f1;
+}
+.btn-group .right{
+    float: right;
+    border: #f1f1f1;
+    font-weight: bolder;
+    text-align: left;
+    padding-right: 50px;
+    vertical-align: text-top;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    align-items: center;
+}
+.btn-group button {
+    /* background-color: #04AA6D; Green background */
+    /* border: 1px solid green; Green border */
+    /* color: white; White text */
+    padding: 30px 0px 10px 50px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */ /* Float the buttons side by side */
+    
+  }
+  
+  /* Clear floats (clearfix hack) */
+  /* .btn-group:after {
+    content: "";
+    clear: both;
+    display: flex;
+  } */
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  /* .btn-group button:hover {
+    background-color: #3e8e41;
+  } */
+
+.delete {
+    /* position: fixed; */
+    top: 50px;
+    right: 10px;
+    margin-left: 20px;
+    padding: 7px 8px;
+    background-color: red;
+    border: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel {
+    /* position: fixed; */
+    margin-left: 10px;
+    top: 50px;
+    right: 10px;
+    padding: 7px 8px;
+    cursor: pointer;
+    border: 2px;
+    background-color: rgb(122, 121, 121);
+    color: white;
 }

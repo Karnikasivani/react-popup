@@ -27,26 +27,15 @@ export default function Modal() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
           <br/>
-            <h2 className="headng">Attendance</h2>
+            <h2 className="headng">Are you sure?</h2>
+            <p>Do you want to delete these records? The process can't be undone</p>
 <br/>
-
-          {arr.map((num,i) => (
-                <>
-            
-            <div class="btn-group">
-
-            {i%2==0? <div className="left"><span style={{color:"red"}}>In </span>:  {num}</div>:<div className="right"><span style={{color:"green"}}>Out </span>:  {num}</div>}
-            
-            </div>
-            
-            </>
-            
-            ))}       
-            
-            <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+            <button className="cancel" onClick={toggleModal}>
+              CANCEL
             </button>
-            
+            <button className="delete">
+              DELETE
+            </button>
           </div>
           
         </div>
